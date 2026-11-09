@@ -31,7 +31,7 @@ MT5 で実際に運用できる形を目指して実装した検証用のパッ�
 ## クイックスタート
 
 ```bash
-git clone <this repo> && cd PlatinumMQL.jl
+git clone https://github.com/lunchpack706/PlatinumMQL.jl.git && cd PlatinumMQL.jl
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
 julia --project=. -t auto examples/demo.jl     # デモ（out/ に .mq5 を出力）
 julia --project=. -e 'using Pkg; Pkg.test()'   # テスト
