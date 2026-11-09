@@ -1,0 +1,12 @@
+# 上流リポジトリ (ryuzakilime/platinum-mql) の README に載っている例をそのまま置いたもの。
+# `strategy "MyEA"` は Julia の構文としては ParseError になるが、
+# PlatinumMQL.load_platinum は行頭のヘッダ行を strategy("MyEA") に読み替えて受け付ける。
+using eruprice
+@platinum_mql begin
+    strategy "MyEA"
+    symbol "EURUSD"
+    timeframe 60
+    if call_price(close, 1.10, 0.05, 0.12, 30/365) > 0.001
+        buy(0.1)
+    end
+end

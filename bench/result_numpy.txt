@@ -1,0 +1,5 @@
+numpy 2.0.2
+european_mc_10M        0.3386 s
+asian_mc_100k_x252     1.2355 s
+asian_pure_python_2k   0.4545 s   (100k 経路換算 22.7 s)
+bs_closed_form_1M      0.4624 s   (math.erf を np.vectorize)

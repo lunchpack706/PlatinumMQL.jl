@@ -1,0 +1,8 @@
+threads = 1   julia 1.13.3
+european_mc_10M        0.2073 s
+asian_mc_100k_x252     0.1851 s
+asian_stderr_plain     2.992e-05
+asian_stderr_cv        1.944e-07   (154 倍小さい)
+bs_closed_form_1M      0.0844 s
+backtest_100k_bars     0.0218 s
+sweep_200x100k_bars    3.5840 s
